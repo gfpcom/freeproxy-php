@@ -1,0 +1,15 @@
+{
+    "name": "getfreeproxy/sdk",
+    "description": "A lightweight PHP client for the Freeproxy API",
+    "type": "library",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Getfreeproxy\\Sdk\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "license": "MIT"
+}
