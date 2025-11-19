@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Trigger Packagist Hook
         run: |
-          curl -X POST https://packagist.org/api/update-package?username=${{ secrets.PACKAGIST_USERNAME }}&apiToken=${{ secrets.PACKAGIST_API_TOKEN }} \
+          curl --fail --show-error -X POST \
             -H "Content-Type: application/json" \
-            -d '{"repository":{"url":"https://github.com/gfpcom/freeproxy-php"}}'
+            -d '{"repository":{"url":"https://github.com/gfpcom/freeproxy-php"}}' \
+            "https://packagist.org/api/update-package?username=${{ secrets.PACKAGIST_USERNAME }}&apiToken=${{ secrets.PACKAGIST_API_TOKEN }}"
