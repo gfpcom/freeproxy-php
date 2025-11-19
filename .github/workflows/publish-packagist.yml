@@ -1,0 +1,16 @@
+name: Publish to Packagist
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Trigger Packagist Hook
+        run: |
+          curl -X POST https://packagist.org/api/update-package?username=${{ secrets.PACKAGIST_USERNAME }}&apiToken=${{ secrets.PACKAGIST_API_TOKEN }} \
+            -H "Content-Type: application/json" \
+            -d '{"repository":{"url":"https://github.com/gfpcom/freeproxy-php"}}'

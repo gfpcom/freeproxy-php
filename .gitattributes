@@ -1,0 +1,14 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Exclude files from distribution package
+/.github export-ignore
+/examples export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/CHANGELOG.md export-ignore
+
+# PHP files should use LF
+*.php eol=lf
+*.json eol=lf
+*.md eol=lf
