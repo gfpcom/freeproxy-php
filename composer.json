@@ -4,7 +4,7 @@
     "type": "library",
     "version": "1.0.0",
     "license": "MIT",
-    "homepage": "https://github.com/gfpcom/freeproxy-php",
+    "homepage": "https://developer.getfreeproxy.com/",
     "keywords": [
         "proxy",
         "freeproxy",
