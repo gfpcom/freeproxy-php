@@ -2,7 +2,7 @@
     "name": "getfreeproxy/sdk",
     "description": "A lightweight PHP client for the Freeproxy API",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "homepage": "https://developer.getfreeproxy.com/",
     "keywords": [
